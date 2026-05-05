@@ -16,11 +16,10 @@ print("Status Code:", login_response.status_code)
 
 # Формируем accessToken
 access_token = login_response_data["token"]["accessToken"]
-
+headers={
+    "Authorization": f"Bearer {access_token}"}
 # Выполняем запрос с данными о пользователе
-get_user = httpx.get("http://localhost:8000/api/v1/users/me", headers={
-    "Authorization": f"Bearer {access_token}"
-})
+get_user = httpx.get("http://localhost:8000/api/v1/users/me", headers=headers)
 
 get_user_data = get_user.json()
 
