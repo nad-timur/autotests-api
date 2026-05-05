@@ -52,7 +52,7 @@ class ExercisesClient(APIClient):
         """
         Метод получения курса.
 
-        :param exercise_id: Идентификатор курса.
+        :param exercise_id: Идентификатор упражнения.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.get(f"/api/v1/exercises/{exercise_id}")
