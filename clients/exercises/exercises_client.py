@@ -85,4 +85,4 @@ class ExercisesClient(APIClient):
         """
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
-    
+
