@@ -1,5 +1,5 @@
-from pydantic import BaseModel, ConfigDict
-from clients.courses.courses_schema import CourseSchema
+from pydantic import BaseModel, ConfigDict, Field
+from tools.fakers import fake
 
 
 class ExerciseSchema(BaseModel):
@@ -23,11 +23,11 @@ class CreateExerciseRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    title: str
-    maxScore: int
-    minScore: int
-    description: str
-    estimatedTime: str
+    title: str = Field(default_factory=fake.sentence)
+    maxScore: int = Field(alias="maxScore", default_factory=fake.max_score)
+    minScore: int = Field(alias="minScore", default_factory=fake.min_score)
+    description: str = Field(default_factory=fake.text)
+    estimatedTime: str = Field(alias="estimatedTime", default_factory=fake.estimated_time)
     courseId: str
 
 
@@ -44,11 +44,11 @@ class UpdateExerciseRequestSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    title: str | None = None
-    maxScore: int | None = None
-    minScore: int | None = None
-    description: str | None = None
-    estimatedTime: str | None = None
+    title: str | None = Field(default_factory=fake.sentence)
+    maxScore: int | None = Field(alias="maxScore", default_factory=fake.max_score)
+    minScore: int | None = Field(alias="minScore", default_factory=fake.min_score)
+    description: str | None = Field(default_factory=fake.text)
+    estimatedTime: str | None = Field(alias="estimatedTime", default_factory=fake.estimated_time)
 
 
 class UpdateExerciseResponseSchema(BaseModel):
