@@ -43,13 +43,27 @@ class CreateCourseResponseSchema(BaseModel):
 
 class UpdateCourseRequestSchema(BaseModel):
     """
+        Описание структуры запроса на обновление курса.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    title: str | None = None
+    maxScore: int | None = None
+    minScore: int | None = None
+    description: str | None = None
+    estimatedTime: str | None = None
+
+
+class UpdateCourseResponseSchema(BaseModel):
+    """
         Описание структуры ответа обновления курса.
-        """
+    """
     course: CourseSchema
 
 
 class GetCourseResponseSchema(BaseModel):
     """
         Описание структуры запроса получения курса.
-        """
+    """
     course: CourseSchema
+

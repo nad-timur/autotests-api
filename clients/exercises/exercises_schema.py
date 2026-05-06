@@ -1,17 +1,16 @@
 from pydantic import BaseModel, ConfigDict
-from clients.files.files_schema import FileSchema
-from clients.users.users_schema import UserSchema
 from clients.courses.courses_schema import CourseSchema
+
 
 class ExerciseSchema(BaseModel):
     """
-    Описание структуры курса.
+    Описание структуры упражнения.
     """
     model_config = ConfigDict(populate_by_name=True)
 
     id: str
     title: str
-    courseId: CourseSchema
+    courseId: str
     maxScore: int
     minScore: int
     description: str
@@ -20,7 +19,7 @@ class ExerciseSchema(BaseModel):
 
 class CreateExerciseRequestSchema(BaseModel):
     """
-    Описание структуры запроса на создание курса.
+    Описание структуры запроса на создание упражнения.
     """
     model_config = ConfigDict(populate_by_name=True)
 
@@ -29,26 +28,54 @@ class CreateExerciseRequestSchema(BaseModel):
     minScore: int
     description: str
     estimatedTime: str
-    previewFileId: str
-    createdByUserId: str
+    courseId: str
 
 
 class CreateExerciseResponseSchema(BaseModel):
     """
-    Описание структуры ответа создания курса.
+    Описание структуры ответа создания упражнения.
     """
     exercise: ExerciseSchema
 
 
 class UpdateExerciseRequestSchema(BaseModel):
     """
-        Описание структуры ответа обновления курса.
-        """
+        Описание структуры запроса на обновления упражнения.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    title: str | None = None
+    maxScore: int | None = None
+    minScore: int | None = None
+    description: str | None = None
+    estimatedTime: str | None = None
+
+
+class UpdateExerciseResponseSchema(BaseModel):
+    """
+        Описание структуры ответа обновления упражнения.
+    """
     exercise: ExerciseSchema
 
 
 class GetExerciseResponseSchema(BaseModel):
     """
-        Описание структуры запроса получения курса.
-        """
+        Описание структуры запроса получения упражнения.
+    """
     exercise: ExerciseSchema
+
+
+class GetExercisesQuerySchema(BaseModel):
+    """
+        Описание структуры запроса получения списка упражнений.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    courseId: str
+
+
+class GetExercisesResponseSchema(BaseModel):
+    """
+        Описание структуры ответа получения списка упражнений.
+    """
+    exercises: list[ExerciseSchema]

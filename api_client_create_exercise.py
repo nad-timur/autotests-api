@@ -1,9 +1,9 @@
-from clients.courses.courses_client import get_courses_client, CreateCourseRequestDict
+from clients.courses.courses_client import get_courses_client, CreateCourseRequestSchema
 from clients.files.files_client import get_files_client, CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client, CreateUserRequestSchema
 from tools.fakers import get_random_email
-from clients.exercises.exercises_client import get_exercises_client, CreateExerciseRequestDict
+from clients.exercises.exercises_client import get_exercises_client, CreateExerciseRequestSchema
 
 
 public_users_client = get_public_users_client()
@@ -34,10 +34,10 @@ create_file_request = CreateFileRequestSchema(
     upload_file="./testdata/files/image.png"
 )
 create_file_response = files_client.create_file(create_file_request)
-print('Create file data:', create_file_response)
+print('Create file data:', create_file_response.model_dump())
 
 # Создаем курс
-create_course_request = CreateCourseRequestDict(
+create_course_request = CreateCourseRequestSchema(
     title="Python",
     maxScore=100,
     minScore=10,
@@ -47,16 +47,17 @@ create_course_request = CreateCourseRequestDict(
     createdByUserId=create_user_response.user.id
 )
 create_course_response = courses_client.create_course(create_course_request)
-print('Create course data:', create_course_response)
+print('Create course data:', create_course_response.model_dump())
 
 
-create_exercise_request = CreateExerciseRequestDict(
+create_exercise_request = CreateExerciseRequestSchema(
     title="Exercise 1",
     maxScore=5,
     minScore=1,
     description="Exercise 1",
     estimatedTime="5 minutes",
-    courseId=create_course_response['course']['id']
+    courseId=create_course_response.course.id
 )
 create_exercise_response = exercises_client.create_exercise(create_exercise_request)
-print('Create exercise data:', create_exercise_response)
+print('Create exercise data:', create_exercise_response.model_dump())
+
