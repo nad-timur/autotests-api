@@ -3,10 +3,10 @@ import pytest
 
 from clients.users.public_users_client import PublicUsersClient
 from clients.users.private_users_client import PrivateUsersClient
-from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema, GetUserResponseSchema
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
-from tools.assertions.users import assert_create_user_response
+from tools.assertions.users import assert_create_user_response, assert_get_user_response
 from tools.fakers import fake
 from tests.conftest import UserFixture
 
@@ -49,3 +49,4 @@ def test_get_user_me(
 
     # 4. Валидация JSON-схемы
     validate_json_schema(response.json(), GetUserResponseSchema.model_json_schema())
+
