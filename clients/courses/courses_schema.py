@@ -20,6 +20,15 @@ class CourseSchema(BaseModel):
     createdByUser: UserSchema  # Вложенная структура пользователя
 
 
+class GetCoursesQuerySchema(BaseModel):
+    """
+        Описание структуры запроса получения списка курсов .
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    user_id: str = Field(alias="userId")
+
+
 class CreateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание курса.
@@ -79,4 +88,11 @@ class GetCourseResponseSchema(BaseModel):
         Описание структуры запроса получения курса.
     """
     course: CourseSchema
+
+
+class GetCoursesResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на получение списка курсов.
+    """
+    courses: list[CourseSchema]
 
