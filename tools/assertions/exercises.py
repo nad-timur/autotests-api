@@ -113,6 +113,7 @@ def assert_get_exercises_response(
     :param create_exercise_responses: Список API ответов при создании заданий.
     :raises AssertionError: Если данные курсов не совпадают.
     """
+    logger.info("Check get exercises response")
     assert_length(get_exercises_response.exercises, create_exercise_responses, "exercises")
 
     for index, create_exercise_response in enumerate(create_exercise_responses):
