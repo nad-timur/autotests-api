@@ -30,7 +30,7 @@ class FilesClient(APIClient):
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post(
-            {APIRoutes.FILES},
+            APIRoutes.FILES,
             data=request.model_dump(by_alias=True, exclude={'upload_file'}),
             files={"upload_file": request.upload_file.read_bytes()}
         )
