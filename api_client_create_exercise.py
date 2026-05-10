@@ -5,6 +5,7 @@ from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
 from clients.exercises.exercises_client import get_exercises_client, CreateExerciseRequestSchema
+from config import settings
 
 public_users_client = get_public_users_client()
 
@@ -22,7 +23,7 @@ courses_client = get_courses_client(authentication_user)
 exercises_client = get_exercises_client(authentication_user)
 
 # Загружаем файл – указываем только путь к файлу, имя и директория сгенерированы
-create_file_request = CreateFileRequestSchema(upload_file="./testdata/files/image.png")
+create_file_request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
 create_file_response = files_client.create_file(create_file_request)
 print('Create file data:', create_file_response.model_dump())
 
