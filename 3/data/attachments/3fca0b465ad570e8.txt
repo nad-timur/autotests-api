@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjMzLjc3OTQ0NSIsInVzZXJfaWQiOiJhNzY4M2Q1ZS0yYTY1LTRmMjktYjU2OS1mMWU2OTk2OTE5MGEifQ.kjRZj0mzOVp4o1GyWx3TLMGT_MWb61vJP0v3QsNKvaM' \
+  -H 'content-length: 378' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Group perform food.","maxScore":58,"minScore":13,"description":"Degree marriage year method past his father. Debate fear staff claim first affect red.\nShake can such sea. Husband worry yeah trouble. After to moment cost expect.","estimatedTime":"4 weeks","previewFileId":"be3a829e-8122-4598-9de0-35d012a90fff","createdByUserId":"a7683d5e-2a65-4f29-b569-f1e69969190a"}'

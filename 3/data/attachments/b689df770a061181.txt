@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjMyLjU4ODU3MyIsInVzZXJfaWQiOiJmNzQ2YmJlZC05MzVjLTQ5ZGMtOGRmZS0yYmNlNGRiMWQ2OGEifQ.Wr0uL6mFHTrD8gdIqsZW4uPCIAdXVcu0znFsUKFwbEY' \
+  -H 'content-length: 438' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Beautiful water indeed police deal floor certain.","maxScore":95,"minScore":23,"description":"Budget my stage. Population environment notice avoid wife. Set husband growth truth. Determine local many most involve just quite.\nMonth education miss read wall well. Lawyer able forget clear.","estimatedTime":"5 weeks","previewFileId":"bf4c0d39-56a2-4411-99a8-a20c5827abca","createdByUserId":"f746bbed-935c-49dc-8dfe-2bce4db1d68a"}'

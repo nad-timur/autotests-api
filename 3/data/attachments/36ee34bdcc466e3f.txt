@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/eaf9987b-d84c-47f2-b14c-fb3825604f44' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjMxLjM3MDE2NyIsInVzZXJfaWQiOiJjNDcyNWE3Mi1lN2E5LTRjMmYtOThhYS0yMTY4MzFlYTc5ZjkifQ.DycEr7loaaSXK_ZlHeFV6rFz8RSOUA2a7ulZfriu6-U' \
+  -H 'content-length: 205' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Notice tonight hotel maintain remain stage.","maxScore":76,"minScore":28,"description":"Leave alone consumer man character.\nFine different same own material personal.","estimatedTime":"6 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjMxLjM3MDE2NyIsInVzZXJfaWQiOiJjNDcyNWE3Mi1lN2E5LTRjMmYtOThhYS0yMTY4MzFlYTc5ZjkifQ.DycEr7loaaSXK_ZlHeFV6rFz8RSOUA2a7ulZfriu6-U' \
+  -H 'content-length: 374' \
+  -H 'content-type: application/json' \
+  -d '{"title":"True early determine doctor book nearly hold.","maxScore":59,"minScore":20,"description":"Soon at style program score available goal school. Full front community thought forward. They management something soon employee rise.","estimatedTime":"9 weeks","previewFileId":"4ed60e49-f248-4517-b384-b1627a41d1e6","createdByUserId":"c4725a72-e7a9-4c2f-98aa-216831ea79f9"}'

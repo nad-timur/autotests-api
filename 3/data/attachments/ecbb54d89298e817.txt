@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjM1LjAxNTYxOSIsInVzZXJfaWQiOiIyZjllMWNkYy0wNWQxLTQ3YWUtYmJmZC02YzY1Y2IxNzI4MjYifQ.t7o9z6SpBdiarydeKk2oxG6bjjJANNx-FPhRoS_88HM' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Specific argue anything something degree.","maxScore":95,"minScore":18,"description":"When apply between account especially. Pressure wide focus film house. Thousand air street break recently. Few majority billion attention quite assume to.","estimatedTime":"6 weeks","previewFileId":"b44379d9-ab04-4900-8d7d-232a2cba5454","createdByUserId":"2f9e1cdc-05d1-47ae-bbfd-6c65cb172826"}'

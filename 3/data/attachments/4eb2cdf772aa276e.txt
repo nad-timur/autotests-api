@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjMxLjY0NTQ2NyIsInVzZXJfaWQiOiJkOWVhZGMzYi0xNGMzLTQxMDAtODcxNC00ZDUzYTFlYzVkMDAifQ.H87TY-SwMxVum_ysjqewtRVxFrNFd47Hvfo1_ilkq_k' \
+  -H 'content-length: 395' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Trial guy lawyer consider weight.","maxScore":92,"minScore":9,"description":"Condition without mind indicate old.\nOwn contain cost life particularly. Lawyer nice fill great table. Large realize popular here clearly. Hit college fire financial.","estimatedTime":"10 weeks","previewFileId":"648ae05e-7161-4c5e-9165-7fa2948ecf5f","createdByUserId":"d9eadc3b-14c3-4100-8714-4d53a1ec5d00"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjIxOjM0LjA1Mzk0NSIsInVzZXJfaWQiOiIwZDJkNTg2MS01ZDg0LTRmOGUtOTM1Zi1mOTdjZDFlMjhmNTAifQ.aEdA8Gpq0FUqS3r5k0wdiTw63sHDUJ6XiBSnUFmkP9M' \
+  -H 'content-length: 333' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Another true admit force product inside well success.","maxScore":57,"minScore":24,"description":"Hour sell not word collection environmental. Recently show resource pick stage yeah.","estimatedTime":"10 weeks","previewFileId":"2a73d263-8ebc-425d-96d7-8cb43b7855a0","createdByUserId":"0d2d5861-5d84-4f8e-935f-f97cd1e28f50"}'
