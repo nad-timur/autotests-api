@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQzLjQwNTU5NSIsInVzZXJfaWQiOiIxMjY2NjA3MC1lMDYxLTQ2M2UtODlhYy1mYjgzMjFjOWNkMTcifQ.PlX_1Ei0JA-zXJyTjpU9kjROIAqtUiOw8LZv7ACmpio' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Total whether happy high.","maxScore":83,"minScore":22,"description":"Present town add away century political. North budget something security candidate. Among both certainly evidence less start skin.","estimatedTime":"2 weeks","previewFileId":"81721cad-c48d-4a91-a849-01a2939af948","createdByUserId":"12666070-e061-463e-89ac-fb8321c9cd17"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/16cc1dfe-03ab-41f9-9145-1c3b34e71f6e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQwLjk5NDM2MCIsInVzZXJfaWQiOiJkOTFjNjhhNy00MGYxLTQ5ODYtYWVmYi1hZjhmMTkyODM3ZTkifQ.IcqBpmButVPC6suVhC4Kx9p47F5mDZnv4azmgl1GuS8' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Interview different back want stuff represent organization.","maxScore":79,"minScore":21,"description":"Suddenly relate recognize per pattern something. Red director once environment quickly. You economy own important me whatever.","estimatedTime":"7 weeks"}'

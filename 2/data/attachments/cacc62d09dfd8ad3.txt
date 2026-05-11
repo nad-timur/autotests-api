@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQyLjQ3Nzg2NSIsInVzZXJfaWQiOiI1YmRjNzNmNC00MWI3LTRlZDQtOWQ1NS1hMjY4YjZmMzZjZDcifQ.yxmJmPoT6cRmA4uYbC1mdLKBcXLjiddjzyeH_QZ2Zgs' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Very send within born care operation drive.","maxScore":51,"minScore":2,"description":"Describe total should everyone Mrs up public television. Around site last camera ok.\nSmall space imagine well build themselves part. Live magazine decision laugh type.","estimatedTime":"5 weeks","previewFileId":"8e5b28ce-3158-48e8-b7b9-57725b3600c2","createdByUserId":"5bdc73f4-41b7-4ed4-9d55-a268b6f36cd7"}'

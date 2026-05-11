@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQwLjk5NDM2MCIsInVzZXJfaWQiOiJkOTFjNjhhNy00MGYxLTQ5ODYtYWVmYi1hZjhmMTkyODM3ZTkifQ.IcqBpmButVPC6suVhC4Kx9p47F5mDZnv4azmgl1GuS8' \
+  -H 'content-length: 420' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Trade myself two room practice.","maxScore":64,"minScore":2,"description":"Perhaps yourself magazine pick include. Loss himself discuss and crime. Have stop brother fly yeah.\nReligious visit themselves. Executive couple control popular school. Age require central take.","estimatedTime":"8 weeks","previewFileId":"c5c9885f-61b9-4ba5-963b-39bc2cf0b30b","createdByUserId":"d91c68a7-40f1-4986-aefb-af8f192837e9"}'

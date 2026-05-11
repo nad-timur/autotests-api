@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/1311f734-0916-4855-8785-105012997ef8' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQyLjQ3Nzg2NSIsInVzZXJfaWQiOiI1YmRjNzNmNC00MWI3LTRlZDQtOWQ1NS1hMjY4YjZmMzZjZDcifQ.yxmJmPoT6cRmA4uYbC1mdLKBcXLjiddjzyeH_QZ2Zgs' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Between you evening tax car.","maxScore":95,"minScore":18,"description":"He section mean girl few rate wear recognize.\nOnce reason expect purpose whom in win. Its development decide notice truth usually doctor. Husband religious born sport former.","estimatedTime":"4 weeks"}'

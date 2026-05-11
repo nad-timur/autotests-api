@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQyLjIwNDYwOCIsInVzZXJfaWQiOiI0YTBkMmViZS00NzJmLTRmNWQtODJlNS00NjY5OGM2Nzc3ODkifQ.OTNjfw2q-QV6M2nTREblrmDX6A7aVajt_bkpDM5PEjg' \
+  -H 'content-length: 398' \
+  -H 'content-type: application/json' \
+  -d '{"title":"That production culture raise sometimes authority.","maxScore":89,"minScore":22,"description":"Everyone occur a major task reason senior. Save apply other parent southern nearly.\nOthers institution offer alone him from still. Least rise pull main.","estimatedTime":"2 weeks","previewFileId":"7e7af627-2f9e-496b-b2b3-96dc69537c74","createdByUserId":"4a0d2ebe-472f-4f5d-82e5-46698c677789"}'

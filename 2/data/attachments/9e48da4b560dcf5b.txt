@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQxLjI2ODIzNiIsInVzZXJfaWQiOiIxNDVlNDE3OS0yNDM0LTQ0N2YtODA3YS0xZmFlNWQ1MTVjNzAifQ.5t3cH3Ovl7bWxkXrC-HVUp4SdZ2FfvkT-eTVFrqr0Lo' \
+  -H 'content-length: 322' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Factor beat so.","maxScore":87,"minScore":17,"description":"Term bed including itself interest on fund prove. Protect least rate dark. We attack hundred suffer foot debate.","estimatedTime":"7 weeks","previewFileId":"a74b04dd-257b-4c0b-8af3-c7b2101b1e2a","createdByUserId":"145e4179-2434-447f-807a-1fae5d515c70"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQzLjY3OTU5MyIsInVzZXJfaWQiOiIyNzlhYWVkOC02MWVjLTQxNjktODVhZS1jMGY3OTk2YWM2MzUifQ.TytT2td6cfy8oXDPIulFuEW96INwfoyGzrO0JIF6XV4' \
+  -H 'content-length: 350' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Occur scene boy.","maxScore":52,"minScore":26,"description":"Strategy board firm experience card. Eight animal least vote agreement region consumer focus. City kind talk hospital trial area executive.","estimatedTime":"8 weeks","previewFileId":"b9dd56af-6deb-4435-a7a6-ac8a8fb23d4c","createdByUserId":"279aaed8-61ec-4169-85ae-c0f7996ac635"}'

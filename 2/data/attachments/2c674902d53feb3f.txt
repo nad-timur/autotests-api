@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjQ0LjY0NjQwMCIsInVzZXJfaWQiOiIyZGViODc3YS1mMTcyLTQ1MWYtYTkxNC0yMjcxODBlNmRkZTMifQ.RT1JzhSaNq6mncZgbf156Yo6NBfNGAEC9Ouwddr3dUI' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"If choice also near year get newspaper.","maxScore":98,"minScore":9,"description":"Consumer down social. Pick lay particularly safe listen range.\nChange run article. Shoulder back central government. Guess big hundred race lay.\nDrop attention suddenly. Good detail group.","estimatedTime":"8 weeks","previewFileId":"476a231b-2684-4d83-831c-7473535018db","createdByUserId":"2deb877a-f172-451f-a914-227180e6dde3"}'

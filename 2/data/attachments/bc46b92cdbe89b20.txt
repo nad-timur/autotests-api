@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTExVDA5OjEzOjM5Ljg0ODM0OCIsInVzZXJfaWQiOiI2MjEzMjBhNS1kZWQ3LTQxYTgtYWQ1OC05Y2VkYTRjNTg5YjEifQ.no5r7siHX7q6oqbtpWjId7hhmdppR6rRm_eysGyrGQY' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cut both appear work generation.","maxScore":67,"minScore":15,"description":"Show black nearly. Party board from. Road TV base task.","estimatedTime":"6 weeks","previewFileId":"afb42c07-f0b3-4c33-aa1c-56ab079e5267","createdByUserId":"621320a5-ded7-41a8-ad58-9ceda4c589b1"}'
